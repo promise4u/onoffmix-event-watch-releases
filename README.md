@@ -5,6 +5,9 @@
 > 이 저장소는 **macOS 데스크탑 앱(.dmg)의 공개 배포 채널**입니다.
 > 코드 저장소가 아닙니다 — 빌드 산출물만 올립니다.
 > 제품 페이지 → [onoffmix.com/apps/event-watch](https://onoffmix.com/apps/event-watch)
+>
+> iPhone · iPad · Apple Watch 는 App Store 에서 받습니다 →
+> [apps.apple.com/us/app/onoffmix-event-watch/id6779810502](https://apps.apple.com/us/app/onoffmix-event-watch/id6779810502)
 
 ---
 
@@ -46,6 +49,36 @@ shasum -a 256 ONOFFMIX-Event-Watch.dmg
 
 ---
 
+## 다운로드 (iOS · iPadOS · watchOS)
+
+iPhone · iPad · Apple Watch 용 Universal 앱은 **Apple App Store** 에서 무료로 받을 수 있습니다.
+
+**App Store 링크** → [apps.apple.com/us/app/onoffmix-event-watch/id6779810502](https://apps.apple.com/us/app/onoffmix-event-watch/id6779810502)
+
+### 시스템 요구사항
+
+- **iPhone / iPad** — iOS 17 / iPadOS 17 이상
+- **Apple Watch** — watchOS 10 이상 (paired iPhone 필요)
+- 자동 동기화 — 같은 Wi-Fi 의 Mac 데스크탑 앱과 mDNS 자동 발견, 다른 망에서는 Cloudflare relay 자동 폴백
+
+### 디바이스별 설치
+
+| 디바이스 | 설치 경로 |
+|---|---|
+| iPhone | App Store → 검색 "ONOFFMIX Event Watch" → 받기 |
+| iPad | 위와 동일 (Universal 앱 — 자동 iPad 레이아웃) |
+| Apple Watch | iPhone 에 설치된 후 watch app 에서 자동 설치 권유 알림 — 페어링된 워치에 설치 |
+
+### 첫 실행 (iPhone 기준)
+
+1. App Store 에서 받기 → 홈 화면에서 **이벤트 워치** 탭
+2. 첫 launch 시 모드 자동 감지:
+   - 같은 Wi-Fi 에 Mac sync 호스트가 있으면 → **Bridge 모드** (Mac 시간 그대로 미러)
+   - 없으면 → **Standalone 모드** (휴대폰 자체가 timer source)
+3. Apple Watch 가 페어링되어 있으면 자동으로 손목까지 시간 흐릅니다.
+
+---
+
 ## 제품 개요
 
 **메모러블 씽**: 발표자가 어디에 있든, 어떤 디바이스든, 시간이 정확히 손에 있습니다.
@@ -66,7 +99,7 @@ shasum -a 256 ONOFFMIX-Event-Watch.dmg
 - **6 locale** — 한국어 · 영어 · 일본어 · 중국어 (간체) · 독일어 · 프랑스어
 - **Q&A 시간 자동 균형** — 발표 일찍 끝나면 Q&A 늘어남, 초과하면 줄어듦
 
-iOS 디바이스 (iPhone · iPad · Apple Watch) 는 **App Store** 에서 무료로 받을 수 있습니다 — 같은 sync 레이어로 자동 페어링.
+iOS 디바이스 (iPhone · iPad · Apple Watch) 는 **[App Store](https://apps.apple.com/us/app/onoffmix-event-watch/id6779810502)** 에서 무료로 받을 수 있습니다 — 같은 sync 레이어로 자동 페어링.
 
 ---
 
